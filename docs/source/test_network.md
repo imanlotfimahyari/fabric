@@ -249,7 +249,7 @@ the chaincode on the channel specified using the channel flag (or `mychannel`
 if no channel is specified).  If you are deploying a chaincode for the first
 time, the script will install the chaincode dependencies. By default, The script
 installs the Go version of the asset-transfer (basic) chaincode. However, you can use the
-language flag, `-l`, to install the typescript or javascript versions of the chaincode.
+language flag, `-ccl`, to install the typescript or javascript versions of the chaincode.
 You can find the asset-transfer (basic) chaincode in the `asset-transfer-basic` folder of the `fabric-samples`
 directory. This folder contains sample chaincode that are provided as examples and
 used by tutorials to highlight Fabric features.
@@ -287,7 +287,7 @@ export CORE_PEER_ADDRESS=localhost:7051
 The `CORE_PEER_TLS_ROOTCERT_FILE` and `CORE_PEER_MSPCONFIGPATH` environment
 variables point to the Org1 crypto material in the `organizations` folder.
 
-If you used `./network.sh deployCC` to install and start the asset-transfer (basic) chaincode, you can invoke the `InitLedger` function of the (Go) chaincode to put an initial list of assets on the ledger (if using typescript or javascript `./network.sh deployCC -l javascript` for example, you will invoke the `initLedger` function of the respective chaincodes).
+If you used `./network.sh deployCC` to install and start the asset-transfer (basic) chaincode, you can invoke the `InitLedger` function of the (Go) chaincode to put an initial list of assets on the ledger (if using typescript or javascript `./network.sh deployCC -ccl javascript` for example, you will invoke the `initLedger` function of the respective chaincodes).
 
 Run the following command to initialize the ledger with assets:
 ```
